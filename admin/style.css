@@ -1,0 +1,129 @@
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+p {
+	font-family: "Poppins", sans-serif;
+}
+
+header {
+	width: 100vw;
+	height: 100px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	color: var(--just-white);
+	background-color: var(--color-primary);
+}
+
+header nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px 24px;
+	width: 100vw;
+	/* border-bottom: 1px solid var(--); */
+}
+
+header .brand {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+header label>svg>path {
+	fill: var(--just-white);
+}
+
+header .btn-menu>label {
+	margin: 5px 0 0 10px;
+}
+
+header .btn-menu > label > svg {
+	height: 25px;
+}
+
+.logo {
+	height: 65px;
+	margin-right: 10px;
+}
+
+.logoName {
+	font-size: var(--title-h4);
+	font-weight: normal;
+}
+
+#btn-menu {
+	display: none;
+}
+
+.menu,
+.navbar-shopping-cart {
+	display: none;
+}
+
+.navbar-left ul,
+.navbar-right ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	height: 60px;
+}
+
+.navbar-left {
+	display: flex;
+	align-items: center;
+	width: inherit;
+}
+
+.navbar-right,
+.navbar-left>ul {
+	display: none;
+}
+
+.optionContainer {
+	width: 100vw;
+	height: calc(100vh - 200px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 100px 0;
+	padding: 0px 40px;
+}
+
+.optionContainer > h2 {
+	font-size: var(--title-h2);
+	margin-bottom: 40px;
+	font-weight: 700;
+}
+
+.optionsNavigation {
+	width: inherit;
+	/* height: inherit; */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+}
+
+.optionsNavigation > a {
+	width: 260px;
+	height: 100px;
+	display: flex;
+	border-radius: 15px;
+	background-color: var(--color-primary);
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	font-size: var(--title-h6);
+	color: var(--just-white);
+}

@@ -1,0 +1,153 @@
+text {
+	display: none;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+p {
+	font-family: "Poppins", sans-serif;
+}
+
+header {
+	width: 100vw;
+	height: 100px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	color: var(--just-white);
+	background-color: var(--color-primary);
+}
+
+header nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px 24px;
+	width: 100vw;
+	/* border-bottom: 1px solid var(--); */
+}
+
+header .brand {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+header label>svg>path {
+	fill: var(--just-white);
+}
+
+header .btn-menu>label {
+	margin: 5px 0 0 10px;
+}
+
+header .btn-menu>label>svg {
+	height: 25px;
+}
+
+.logo {
+	height: 65px;
+	margin-right: 10px;
+}
+
+.logoName {
+	font-size: var(--title-h4);
+	font-weight: normal;
+}
+
+#btn-menu {
+	display: none;
+}
+
+.menu,
+.navbar-shopping-cart {
+	display: none;
+}
+
+.navbar-left ul,
+.navbar-right ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	height: 60px;
+}
+
+.navbar-left {
+	display: flex;
+	align-items: center;
+	width: inherit;
+}
+
+.navbar-right,
+.navbar-left>ul {
+	display: none;
+}
+
+.productContainer {
+	width: 100%;
+	height: auto;
+	margin-top: 100px;
+	padding: 30px 0 20px;
+	/* background-color: var(--text-input-field); */
+}
+
+.title {
+	font-size: var(--title-h1);
+	text-align: center;
+	color: var(--dark-variation);
+}
+
+th, td {
+	border: 2px solid var(--color-variation);
+}
+
+.productsTable {
+	width: 90%;
+	height: auto;
+	margin: 20px auto 0;
+	border-collapse: collapse;
+}
+
+.productsTable > .encabezadoTable > tr > th {
+	font-size: var(--paragraphs);
+	padding: 10px;
+}
+
+.cuerpoTable > .filaInfoProduct > td {
+	font-family: var(--fontAlternative);
+	font-size: 14rem;
+	padding: 5px;
+}
+.cuerpoTable > .filaInfoProduct > .descripcionData {
+	font-size: 12rem;
+}
+.cuerpoTable>.filaInfoProduct>.existenciasData {
+	font-size: 16rem;
+	font-weight: 600;
+}
+.cuerpoTable > .filaInfoProduct > .precioData {
+	font-size: 18rem;
+	font-weight: 700;
+}
+.cuerpoTable>.filaInfoProduct>.precioData > p {
+	text-decoration: underline;
+
+}
+
+.idData, .nombreData, .existenciasData, .precioData {
+	text-align: center;
+}
+
+.cuerpoTable > .filaInfoProduct > .urlData > img {
+	height: 100px;
+	padding: 5px;
+}
